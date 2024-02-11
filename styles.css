@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="task"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="task"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e00f0f;
+}
+
+/* Additional Styling for the Login Page */
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjustments for Add Task and Completed Tasks Pages */
+#taskForm, #completedTaskList {
+  margin: 50px auto;
+  max-width: 600px;
+}
+#completedTasksButton{
+  background-color: #45a049;
+  padding: 7px 14px; /* Adjust padding as needed */
+    width: 8%;
+    margin-left: 46%;
+  }
+  #completedTasksButton:hover {
+    background-color: darkgreen;
+  }
+
+#completedTaskList {
+  padding: 0;
+  list-style-type: none;
+}
+
+#completedTaskList h1 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#completedTaskList li {
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+
+.mark-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 7px 14px; /* Adjust padding as needed */
+  width: 8%;
+  margin-left: 80%;/* Adjust padding to increase button size */
+}
+
+.mark-button:hover {
+  background-color: #534d4d;
+}
+
